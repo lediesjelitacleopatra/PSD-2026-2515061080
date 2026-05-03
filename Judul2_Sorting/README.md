@@ -112,3 +112,7 @@ Setelah semua data lagu selesai diinput, program akan menampilkan daftar lagu se
 Selanjutnya program menjalankan algoritma Bubble Sort untuk mengurutkan data berdasarkan jumlah diputar secara descending, yaitu dari lagu yang paling sering diputar hingga yang paling sedikit diputar.
 
 Dari output tersebut dapat dilihat bahwa lagu dengan jumlah pemutaran tertinggi akan berada di urutan pertama. Hal ini membuktikan bahwa algoritma Bubble Sort berhasil bekerja sesuai tujuan program, yaitu mengurutkan playlist lagu favorit berdasarkan jumlah diputar tanpa error
+
+## Link YouTube
+
+https://youtu.be/j7F0ZSs8Qk0
