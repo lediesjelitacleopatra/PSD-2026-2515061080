@@ -90,8 +90,25 @@ Selanjutnya terdapat fungsi `main()`, yaitu fungsi utama yang menjalankan seluru
 
 `tampilkan_lagu(lagu)` digunakan kembali untuk menampilkan data lagu yang sudah terurut.
 
-<img width="912" height="251" alt="image" src="https://github.com/user-attachments/assets/contoh-image-main.png" />
-
 `if __name__ == "__main__":` digunakan untuk memastikan bahwa fungsi `main()` hanya berjalan saat file Python dijalankan secara langsung, bukan saat dipanggil dari file lain.
 
 `main()` berfungsi untuk memulai seluruh program.
+
+## Output
+
+<img width="401" height="210" alt="image" src="https://github.com/user-attachments/assets/ff33f24b-fc59-4cc5-9798-2c479acc9608" />
+
+Saat program pertama kali dijalankan, pengguna akan diminta memasukkan jumlah lagu yang ingin disimpan ke dalam playlist. Input ini digunakan untuk menentukan berapa banyak data lagu yang akan dimasukkan ke dalam program.
+
+Setelah itu, program akan meminta pengguna mengisi data setiap lagu, yaitu judul lagu dan jumlah diputar. Proses ini dilakukan berulang sesuai jumlah lagu yang telah dimasukkan sebelumnya.
+
+
+<img width="470" height="141" alt="image" src="https://github.com/user-attachments/assets/aec7eb10-3915-48e5-af0d-0f1c411cb9e2" />
+
+Setelah semua data lagu selesai diinput, program akan menampilkan daftar lagu sebelum dilakukan proses pengurutan. Data masih ditampilkan sesuai urutan saat pertama kali dimasukkan oleh pengguna.
+
+<img width="714" height="136" alt="image" src="https://github.com/user-attachments/assets/ffac1c51-68e3-44d4-9ae5-840459aff264" />
+
+Selanjutnya program menjalankan algoritma Bubble Sort untuk mengurutkan data berdasarkan jumlah diputar secara descending, yaitu dari lagu yang paling sering diputar hingga yang paling sedikit diputar.
+
+Dari output tersebut dapat dilihat bahwa lagu dengan jumlah pemutaran tertinggi akan berada di urutan pertama. Hal ini membuktikan bahwa algoritma Bubble Sort berhasil bekerja sesuai tujuan program, yaitu mengurutkan playlist lagu favorit berdasarkan jumlah diputar tanpa error
