@@ -94,7 +94,7 @@ Selanjutnya terdapat fungsi `main()`, yaitu fungsi utama yang menjalankan seluru
 
 `main()` berfungsi untuk memulai seluruh program.
 
-## Output
+## Output Program
 
 <img width="401" height="210" alt="image" src="https://github.com/user-attachments/assets/ff33f24b-fc59-4cc5-9798-2c479acc9608" />
 
