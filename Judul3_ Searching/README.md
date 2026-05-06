@@ -68,3 +68,8 @@ yang berfungsi untuk menampilkan jumlah kemunculan dan posisi kata.
 Jika kondisi bernilai salah, maka program akan menjalankan:
 `print(f"Kata '{target}' tidak ditemukan.")`
 yang berfungsi untuk menampilkan bahwa kata tidak ditemukan.
+
+<img width="419" height="75" alt="image" src="https://github.com/user-attachments/assets/0e158fb4-b8a3-4040-b3d5-fe7c0483e98b" />
+
+`if __name__ == "__main__":`
+digunakan untuk memastikan bahwa fungsi main() hanya dijalankan ketika file program dieksekusi secara langsung.
