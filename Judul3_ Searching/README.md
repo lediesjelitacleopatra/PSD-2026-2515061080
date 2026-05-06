@@ -73,3 +73,21 @@ yang berfungsi untuk menampilkan bahwa kata tidak ditemukan.
 
 `if __name__ == "__main__":`
 digunakan untuk memastikan bahwa fungsi main() hanya dijalankan ketika file program dieksekusi secara langsung.
+
+## Output Program
+
+<img width="887" height="167" alt="image" src="https://github.com/user-attachments/assets/f4dcabf2-c46b-46b8-a928-4a05b9897e79" />
+
+Pada contoh di atas, saya memasukkan kalimat "saya belajar struktur data, struktur itu penting" dan mencari kata `struktur`.
+
+Program kemudian menghapus tanda baca menggunakan perintah
+`kalimat = kalimat.translate(str.maketrans('', '', string.punctuation))`
+sehingga koma `(,)` dihilangkan agar tidak mengganggu proses pencarian.
+
+Setelah itu, kalimat dipecah menjadi list kata menggunakan `split()`, menghasilkan:
+`["saya", "belajar", "struktur", "struktur", "itu", "penting"]`
+
+Selanjutnya, program melakukan pencarian menggunakan metode Sequential Search, yaitu dengan memeriksa setiap kata secara berurutan menggunakan perulangan
+`for i in range(len(kata_list)):.`
+
+Hasilnya, kata `struktur` ditemukan sebanyak 2 kali, yaitu pada indeks ke-2 dan ke-3 dalam list.
