@@ -93,3 +93,4 @@ Selanjutnya, program melakukan pencarian menggunakan metode Sequential Search, y
 Hasilnya, kata `struktur` ditemukan sebanyak 2 kali, yaitu pada indeks ke-2 dan ke-3 dalam list.
 
 ## Link YouTube
+https://youtu.be/a_XbRXmW7nY
