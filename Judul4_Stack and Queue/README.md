@@ -16,9 +16,11 @@ Pertama, saya membuat class `Node`. Class ini digunakan untuk menyimpan data web
 
 `self.next = None` digunakan sebagai pointer untuk menghubungkan node ke node berikutnya.
 
-<img width="454" height="114" alt="image" src="https://github.com/user-attachments/assets/9355af38-786f-492e-8524-e9f092a86d5a" />
+<img width="415" height="104" alt="image" src="https://github.com/user-attachments/assets/38839d52-ae32-426c-aabb-d0db7719c4c6" />
+
 
 Selanjutnya saya membuat `class StackLinkedList` yang digunakan untuk mengatur seluruh data stack.
+
 `def __init__(self):` merupakan constructor class stack.
 
 `self.top_ptr = None` digunakan sebagai penunjuk data paling atas dalam stack. Nilai awal None menandakan stack masih kosong.
