@@ -18,7 +18,6 @@ Pertama, saya membuat class `Node`. Class ini digunakan untuk menyimpan data web
 
 <img width="415" height="104" alt="image" src="https://github.com/user-attachments/assets/38839d52-ae32-426c-aabb-d0db7719c4c6" />
 
-
 Selanjutnya saya membuat `class StackLinkedList` yang digunakan untuk mengatur seluruh data stack.
 
 `def __init__(self):` merupakan constructor class stack.
@@ -27,13 +26,13 @@ Selanjutnya saya membuat `class StackLinkedList` yang digunakan untuk mengatur s
 
 <img width="414" height="96" alt="image" src="https://github.com/user-attachments/assets/895b24f0-0198-45ea-bb8a-10d563b32454" />
 
-Berikutnya terdapat fungsi is_empty() yang digunakan untuk mengecek apakah stack kosong.
+Berikutnya terdapat fungsi `is_empty()` yang digunakan untuk mengecek apakah stack kosong.
 
 `return self.top_ptr is None` akan menghasilkan nilai True jika stack kosong dan False jika stack memiliki data.
 
 <img width="887" height="257" alt="image" src="https://github.com/user-attachments/assets/8e7a088f-855f-4e82-9170-0013038551c2" />
 
-Selanjutnya terdapat fungsi push() yang digunakan untuk menambahkan website baru ke dalam stack.
+Selanjutnya terdapat fungsi `push()` yang digunakan untuk menambahkan website baru ke dalam stack.
 
 `new_node = Node(website)` digunakan untuk membuat node baru yang berisi nama website.
 
@@ -160,3 +159,6 @@ Jika pengguna memasukkan pilihan menu yang tidak tersedia, maka program akan men
 <img width="463" height="243" alt="image" src="https://github.com/user-attachments/assets/19d4e524-48dd-4889-9153-dba2ad20e762" />
 
 Program akan berhenti ketika pengguna memilih menu keluar dan akan menampilkan pesan “Program selesai”.
+
+## Link YouTube
+https://youtu.be/oXvvqyjfYXM
