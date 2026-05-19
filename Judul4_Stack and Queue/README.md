@@ -124,3 +124,13 @@ Bagian ini digunakan untuk menampilkan menu utama program.
 `else:` digunakan jika pengguna memasukkan pilihan yang tidak tersedia.
 
 `print("Pilihan tidak valid!")` digunakan untuk menampilkan pesan kesalahan input.
+
+## Output Program
+
+<img width="405" height="190" alt="image" src="https://github.com/user-attachments/assets/0d55982d-8a69-4cbf-a8d5-150fe948d22f" />
+
+Saat program pertama kali dijalankan, pengguna akan melihat menu utama yang berisi pilihan untuk membuka website, menghapus website terakhir, melihat website terakhir yang dibuka, menampilkan seluruh riwayat browser, dan keluar dari program.
+
+<img width="673" height="271" alt="image" src="https://github.com/user-attachments/assets/59654c6f-2ee4-4438-b80e-e6be6324aa27" />
+
+Jika pengguna memilih menu buka website, maka program akan meminta input nama website, kemudian website tersebut akan masuk ke dalam stack dan menjadi data paling atas.
