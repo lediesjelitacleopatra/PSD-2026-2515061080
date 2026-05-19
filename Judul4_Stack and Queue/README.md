@@ -5,3 +5,122 @@ Program ini merupakan implementasi struktur data Stack menggunakan Linked List d
 Struktur data yang digunakan adalah Stack Linked List dengan konsep LIFO (Last In First Out), yaitu data yang terakhir masuk akan menjadi data pertama yang keluar. Pada program ini, setiap website disimpan dalam node linked list, di mana website yang terakhir dibuka akan berada di posisi paling atas stack. Struktur data stack dipilih karena sesuai dengan cara kerja fitur back pada browser, yaitu halaman terakhir yang dibuka akan menjadi halaman pertama yang keluar saat pengguna kembali ke halaman sebelumnya.
 
 ## Source Code
+
+<img width="477" height="130" alt="image" src="https://github.com/user-attachments/assets/b245236e-5aa2-40ce-8512-fb90d83cff04" />
+
+Pertama, saya membuat class `Node`. Class ini digunakan untuk menyimpan data website pada setiap node linked list.
+
+`def __init__(self, website):` merupakan constructor yang digunakan untuk menerima input nama website.
+
+`self.website = website` digunakan untuk menyimpan nama website ke dalam node.
+
+`self.next = None` digunakan sebagai pointer untuk menghubungkan node ke node berikutnya.
+
+<img width="454" height="114" alt="image" src="https://github.com/user-attachments/assets/9355af38-786f-492e-8524-e9f092a86d5a" />
+
+Selanjutnya saya membuat `class StackLinkedList` yang digunakan untuk mengatur seluruh data stack.
+`def __init__(self):` merupakan constructor class stack.
+
+`self.top_ptr = None` digunakan sebagai penunjuk data paling atas dalam stack. Nilai awal None menandakan stack masih kosong.
+
+<img width="414" height="96" alt="image" src="https://github.com/user-attachments/assets/895b24f0-0198-45ea-bb8a-10d563b32454" />
+
+Berikutnya terdapat fungsi is_empty() yang digunakan untuk mengecek apakah stack kosong.
+
+`return self.top_ptr is None` akan menghasilkan nilai True jika stack kosong dan False jika stack memiliki data.
+
+<img width="887" height="257" alt="image" src="https://github.com/user-attachments/assets/8e7a088f-855f-4e82-9170-0013038551c2" />
+
+Selanjutnya terdapat fungsi push() yang digunakan untuk menambahkan website baru ke dalam stack.
+
+`new_node = Node(website)` digunakan untuk membuat node baru yang berisi nama website.
+
+`new_node.next = self.top_ptr` digunakan untuk menghubungkan node baru ke data teratas sebelumnya.
+
+`self.top_ptr = new_node` digunakan untuk menjadikan node baru sebagai data paling atas stack.
+
+`print(f"Website '{website}' berhasil ditambahkan ke riwayat browser.")` digunakan untuk menampilkan pesan bahwa website berhasil ditambahkan.
+
+<img width="844" height="324" alt="image" src="https://github.com/user-attachments/assets/4d47944e-177d-4bab-ab80-9057970d964f" />
+
+Berikutnya terdapat fungsi `pop()` yang digunakan untuk menghapus website terakhir dari stack.
+
+`if self.is_empty():` digunakan untuk mengecek apakah stack kosong.
+
+`print("Riwayat browser kosong")` digunakan untuk menampilkan pesan jika tidak ada data yang bisa dihapus.
+
+`temp = self.top_ptr` digunakan untuk menyimpan data website paling atas sebelum dihapus.
+
+`print(f"Website '{temp.website}' berhasil dihapus dari riwayat.")` digunakan untuk menampilkan website yang dihapus.
+
+`self.top_ptr = self.top_ptr.next` digunakan untuk memindahkan posisi top ke node berikutnya sehingga data teratas sebelumnya terhapus dari stack.
+
+<img width="762" height="208" alt="image" src="https://github.com/user-attachments/assets/a79c6dda-5036-4aba-944e-cc9d20ad6423" />
+
+Selanjutnya terdapat fungsi `peek()` yang digunakan untuk melihat website terakhir yang dibuka.
+
+`if self.is_empty():` digunakan untuk mengecek apakah stack kosong.
+
+`print(f"Website terakhir dibuka: {self.top_ptr.website}")` digunakan untuk menampilkan data website yang berada di posisi paling atas stack.
+
+<img width="653" height="411" alt="image" src="https://github.com/user-attachments/assets/4d3d0976-27e9-4f73-8e28-bccb97f49211" />
+
+Berikutnya terdapat fungsi `display()` yang digunakan untuk menampilkan seluruh isi stack.
+
+`if self.is_empty():` digunakan untuk mengecek apakah stack kosong.
+
+`print("\nRiwayat Browser (Terbaru ke Terlama):")` digunakan untuk menampilkan judul output.
+
+`current = self.top_ptr` digunakan sebagai variabel bantu untuk menelusuri stack dari data teratas.
+
+`nomor = 1` digunakan untuk memberikan nomor urut pada setiap website.
+
+`while current is not None:` digunakan untuk melakukan perulangan sampai node terakhir.
+
+`print(f"{nomor}. {current.website}")` digunakan untuk menampilkan nomor urut dan nama website.
+
+`current = current.next` digunakan untuk berpindah ke node berikutnya.
+
+`nomor += 1` digunakan untuk menambahkan nomor urut.
+
+<img width="685" height="501" alt="image" src="https://github.com/user-attachments/assets/b66d5576-583d-498b-9862-92fd2359b10c" />
+
+<img width="581" height="358" alt="image" src="https://github.com/user-attachments/assets/fc346fbf-8f51-4bc7-82c5-5b38ca33e270" />
+
+<img width="508" height="284" alt="image" src="https://github.com/user-attachments/assets/2e2b38d4-2dfc-479c-be77-c6832de564bb" />
+
+Terakhir terdapat fungsi `main()` yang digunakan sebagai fungsi utama program.
+
+`stack = StackLinkedList()` digunakan untuk membuat object stack.
+
+`while pilih != 5:` digunakan untuk menjalankan program terus-menerus sampai pengguna memilih keluar.
+
+Bagian ini digunakan untuk menampilkan menu utama program.
+
+`pilih = int(input("Pilih menu: "))` digunakan untuk menerima input pilihan menu dari pengguna.
+
+`if pilih == 1:` digunakan ketika pengguna ingin menambahkan website baru.
+
+`website = input("Masukkan nama website: ")` digunakan untuk menerima input nama website.
+
+`stack.push(website)` digunakan untuk memanggil fungsi push.
+
+`elif pilih == 2:` digunakan ketika pengguna ingin menghapus website terakhir.
+
+`stack.pop()` digunakan untuk memanggil fungsi pop.
+
+`elif pilih == 3:` digunakan ketika pengguna ingin melihat website terakhir yang dibuka.
+
+`stack.peek()` digunakan untuk memanggil fungsi peek.
+
+`elif pilih == 4:` digunakan ketika pengguna ingin menampilkan seluruh riwayat browser.
+
+`stack.display()` digunakan untuk memanggil fungsi display.
+
+`elif pilih == 5:` digunakan untuk keluar dari program.
+
+`print("Program selesai.")` digunakan untuk menampilkan pesan saat program dihentikan.
+
+`else:` digunakan jika pengguna memasukkan pilihan yang tidak tersedia.
+
+`print("Pilihan tidak valid!")` digunakan untuk menampilkan pesan kesalahan input.
