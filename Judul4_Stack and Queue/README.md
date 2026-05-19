@@ -131,6 +131,30 @@ Bagian ini digunakan untuk menampilkan menu utama program.
 
 Saat program pertama kali dijalankan, pengguna akan melihat menu utama yang berisi pilihan untuk membuka website, menghapus website terakhir, melihat website terakhir yang dibuka, menampilkan seluruh riwayat browser, dan keluar dari program.
 
-<img width="673" height="271" alt="image" src="https://github.com/user-attachments/assets/59654c6f-2ee4-4438-b80e-e6be6324aa27" />
+<img width="629" height="272" alt="image" src="https://github.com/user-attachments/assets/aa681f22-7e94-4a1f-b15c-231013862e97" />
 
 Jika pengguna memilih menu buka website, maka program akan meminta input nama website, kemudian website tersebut akan masuk ke dalam stack dan menjadi data paling atas.
+
+<img width="507" height="287" alt="image" src="https://github.com/user-attachments/assets/2d23b808-9549-4875-bf70-353c35441aa9" />
+
+Jika pengguna memilih menu tampilkan riwayat browser, maka seluruh data website akan ditampilkan mulai dari website terbaru hingga website terlama sesuai konsep stack.
+
+<img width="368" height="79" alt="image" src="https://github.com/user-attachments/assets/6d0fbda4-721b-4aa1-b213-aac189dd6699" />
+
+Jika pengguna memilih menu lihat website terakhir, maka program akan menampilkan website yang berada di posisi paling atas stack.
+
+<img width="546" height="282" alt="image" src="https://github.com/user-attachments/assets/f686d04d-161d-4910-8108-83ff30b96216" />
+
+Jika pengguna memilih menu hapus website terakhir, maka website paling atas akan dihapus terlebih dahulu karena stack menggunakan konsep LIFO (Last In First Out).
+
+<img width="386" height="278" alt="image" src="https://github.com/user-attachments/assets/7873de52-0f9e-447a-bda5-277ccc80a27a" />
+
+Jika stack kosong dan pengguna mencoba menghapus atau melihat website terakhir, maka program akan menampilkan pesan “Riwayat browser kosong”.
+
+<img width="401" height="284" alt="image" src="https://github.com/user-attachments/assets/10fe7111-dbaa-4120-af7b-6225a67fded9" />
+
+Jika pengguna memasukkan pilihan menu yang tidak tersedia, maka program akan menampilkan pesan “Pilihan tidak valid!”.
+
+<img width="463" height="243" alt="image" src="https://github.com/user-attachments/assets/19d4e524-48dd-4889-9153-dba2ad20e762" />
+
+Program akan berhenti ketika pengguna memilih menu keluar dan akan menampilkan pesan “Program selesai”.
